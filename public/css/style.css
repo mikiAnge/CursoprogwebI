@@ -1,3 +1,42 @@
 body {
     background-color: bisque;
 }
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border: 3px blueviolet solid;
+}
+
+td {
+
+    border: 3px blue solid;
+}
+th {
+
+    border: 3px rgb(72, 185, 168) solid;
+}
+
+
+.item1 {grid-area: header;}
+.item2 {grid-area: menu;}
+.item3 {grid-area: main;}
+.item4 {grid-area: right;}
+.item5 {grid-area: footer;}
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: brown;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
