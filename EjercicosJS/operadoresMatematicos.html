@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Operaciones Mat</title>
+        <link rel="stylesheet" href="/public/css/style.css">
+        <script>
+            /** Script en encabezados de html*/
+            function sumar(){
+                var num1 = document.getElementById("nume1").value;
+                var num2 = document.getElementById("nume2").value;
+                var suma = parseInt(num1) + parseInt(num2);
+                document.getElementById("suma").innerHTML = suma;
+            }
+            function restar(){
+                var num1 = document.getElementById("nume1").value;
+                var num2 = document.getElementById("nume2").value;
+                var resta = parseInt(num1) - parseInt(num2);
+                document.getElementById("resta").innerHTML = resta;
+            }
+            function multiplicar(){
+                var num1 = document.getElementById("nume1").value;
+                var num2 = document.getElementById("nume2").value;
+                var multi = parseInt(num1) * parseInt(num2);
+                document.getElementById("multi").innerHTML = multi;
+            }
+            function divide(){
+                var num1 = document.getElementById("nume1").value;
+                var num2 = document.getElementById("nume2").value;
+                var divi = parseInt(num1) / parseInt(num2);
+                document.getElementById("divi").innerHTML = divi;
+            }
+            /*
+            var resta = num1 - num2;
+            var multi = num1 * num2;
+            var divi = num1 / num2;*/
+        </script>
+    </head>
+    <body>
+        <input type="number" id="nume1"><br><br>
+        <input type="number" id="nume2"><br><br>
+        <button onclick="sumar()">Suma</button>
+        <button onclick="restar()">Resta</button>
+        <button onclick="multiplicar()">Multiplicación</button>
+        <button onclick="divide()">Division</button>
+        <h2>Suma</h2>
+        <p id="suma">Resultado de suma</p>
+        <br><br>
+        <h2>Resta</h2>
+        <p id="resta">Resultado de Resta</p>
+        <br><br>
+        <h2>Multiplicación</h2>
+        <p id="multi">Resultado de Multiplicar</p>
+        <br><br>
+        <h2>División</h2>
+        <p id="divi">Resultado de Division</p>
+
+        <script>
+            /***Script en el cuerpo del HTML*/
+            /*var num1 = 12;
+            var num2 = 6;
+
+            var suma = num1 + num2;
+            var resta = num1 - num2;
+            var multi = num1 * num2;
+            var divi = num1 / num2;
+
+            document.getElementById("suma").innerHTML = suma;
+            document.getElementById("resta").innerHTML = resta;
+            document.getElementById("multi").innerHTML = multi;
+            document.getElementById("divi").innerHTML = divi;*/
+        </script>
+    </body>
+</html>
