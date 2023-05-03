@@ -1,6 +1,29 @@
 body {
     background-color: bisque;
 }
+/*Configuracion de estilo para la barra de navegación y el cuerpo de mi pagina web*/
+.container-barra{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 26px;
+}
+.container-body{
+    background-color: aquamarine;
+    font-family: Georgia;
+    font-size: 24;
+    min-width: 90%;
+    max-width: 1024px;
+    padding: 5px 20px;
+    text-align: center;
+    color: rgba(56, 54, 54, 0.958);
+}
+p {
+    text-align: justify;
+    font-size: 20px;
+}
+img {
+    min-width: 50%;
+    max-width: 648px;
+}
 /*Configuracion de estilo para la barra de navegación*/
 .barra-navegacion {
     list-style-type: none;
