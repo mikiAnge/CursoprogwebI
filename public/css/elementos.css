@@ -64,3 +64,29 @@ button {
     display: table;
     clear: both;
 }
+
+.contenerdor-contenido{
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    gap: 10px;
+}
+
+a.openModal {
+    margin: 1em auto;
+    display: block;
+    width: 200px;
+    background: #ccc;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    text-shadow: 0 1px 0 #fff;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+
+dialog::backdrop {
+    background: rgba(234, 206, 227, 0.9);
+  }
